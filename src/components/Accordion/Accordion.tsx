@@ -2,17 +2,17 @@ import React from "react";
 
 type AccordionType = {
     titleValue: string
-    collapsed: true | false
+    collapsed: boolean
 }
 
 function Accordion(props: AccordionType) {
-    if (collapsed === true) {
+    if (props.collapsed === true) {
         return (
             <div>
                 <AccordionTitle title={props.titleValue}/>
             </div>
         )
-    } else (collapsed === false) {
+    } else   {
         return (
             <div>
                 <AccordionTitle title={props.titleValue}/>
